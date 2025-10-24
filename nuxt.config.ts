@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     apiKeyGemini: process.env.API_KEY_GEMINI || "",
   },
   app: {
-    pageTransition: { name: "page", mode: "out-in" },
+    // pageTransition: { name: "page", mode: "out-in" },
     head: {
       link: [
         {

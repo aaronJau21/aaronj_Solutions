@@ -37,21 +37,18 @@ const navLinks: INavLink[] = [
             />
           </NuxtLink>
         </div>
-
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex md:items-center md:space-x-2">
-          <NuxtLink
-            v-for="link in navLinks"
-            :key="link.text"
-            :to="link.to"
-            class="text-white/90 hover:text-blue-400 px-4 py-2 rounded-lg text-base font-medium transition-all duration-300 relative group link__nuxt"
-          >
-            {{ link.text }}
-            <span
-              class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"
-            ></span>
-          </NuxtLink>
-        </div>
+        <nav class="hidden md:block">
+          <ul class="hidden md:flex md:items-center md:space-x-2">
+            <li v-for="link in navLinks" :key="link.text">
+              <NuxtLink
+                :to="link.to"
+                class="text-white/90 hover:text-blue-400 px-4 py-2 rounded-lg text-base font-medium transition-all duration-300 relative group link__nuxt"
+              >
+                {{ link.text }}
+              </NuxtLink>
+            </li>
+          </ul>
+        </nav>
 
         <!-- Mobile Menu Button -->
         <div class="md:hidden flex items-center">
