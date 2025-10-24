@@ -11,6 +11,11 @@ export default defineNuxtConfig({
   app: {
     // pageTransition: { name: "page", mode: "out-in" },
     head: {
+      title:
+        "AaronJ Solutions - Desarrollo web y soluciones digitales a medida",
+      htmlAttrs: {
+        lang: "es",
+      },
       link: [
         {
           rel: "stylesheet",
@@ -18,6 +23,9 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+  image: {
+    domains: ["localhost", "www.aaronjsolutions.com", "aaronjsolutions.com"],
   },
   css: ["~/assets/css/main.css"],
   vite: {
