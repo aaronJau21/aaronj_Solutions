@@ -10,11 +10,11 @@ import IconTitle from "../ui/icon-title/IconTitle.vue";
     />
     <div class="mt-5">
       <h1 class="text-center">Services Page</h1>
-      <p class="text-center text-blue600 text-lg mt-5">
+      <p class="text-center text-blue600 text-lg mt-5 font-semibold">
         Soluciones de software personalizadas para impulsar tu negocio. Desde
         páginas web
       </p>
-      <p class="text-center text-blue600 text-lg">
+      <p class="text-center text-blue600 text-lg font-semibold">
         hasta integración de inteligencia artificial.
       </p>
     </div>

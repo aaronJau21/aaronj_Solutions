@@ -3,7 +3,7 @@ import IconTitle from "../ui/icon-title/IconTitle.vue";
 </script>
 <template>
   <section
-    class="flex justify-center items-center min-h-[calc(100vh-390px)] px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20"
+    class="flex justify-center items-center min-h-[calc(100vh-570px)] px-4 sm:px-6 lg:px-8"
   >
     <div class="max-w-6xl mx-auto w-full">
       <!-- Título principal -->
@@ -14,12 +14,12 @@ import IconTitle from "../ui/icon-title/IconTitle.vue";
       />
       <h1 class="text-center">
         <span class="md:block">Transformamos tus ideas en</span>
-        <span class="md:block text-navy">soluciones digitales</span>
+        <span class="md:block text-navy ">soluciones digitales</span>
       </h1>
 
       <!-- Descripción -->
       <p
-        class="text-center text-base sm:text-lg md:text-xl text-blue600 max-w-4xl mx-auto px-4 mb-8 sm:mb-10 md:mb-12 leading-relaxed"
+        class="text-center text-base sm:text-lg md:text-xl text-blue600 max-w-4xl mx-auto px-4 mb-8 sm:mb-10 md:mb-12 leading-relaxed mt-5 font-semibold"
       >
         Desarrollamos software innovador que impulsa el crecimiento de tu
         negocio. Páginas web, sistemas empresariales, apps móviles e integración

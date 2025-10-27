@@ -15,7 +15,7 @@
               <span class="block">Ponte en contacto</span>
               <span class="block text-blue-600">con nosotros</span>
             </h1>
-            <p class="mt-4 text-lg text-gray-600 max-w-md mx-auto lg:mx-0">
+            <p class="mt-4 text-lg text-gray-600 max-w-md mx-auto lg:mx-0 font-semibold">
               Estamos aquí para ayudarte. Completa el formulario y nos pondremos
               en contacto contigo lo antes posible.
             </p>
