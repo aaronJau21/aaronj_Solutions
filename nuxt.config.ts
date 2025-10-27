@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   modules: ["@nuxt/eslint", "@nuxt/icon", "@nuxt/image"],
   runtimeConfig: {
     apiKeyGemini: process.env.API_KEY_GEMINI || "",
+    public: {
+      urlApi: process.env.URL_API,
+    },
   },
   app: {
     // pageTransition: { name: "page", mode: "out-in" },
