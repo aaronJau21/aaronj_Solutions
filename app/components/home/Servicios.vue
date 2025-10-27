@@ -36,7 +36,7 @@ const cards = ref<ICards[]>([
 ]);
 </script>
 <template>
-  <section class="py-16 sm:py-24">
+  <section class="">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
         <IconTitle

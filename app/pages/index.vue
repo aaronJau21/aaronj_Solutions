@@ -3,6 +3,7 @@ import ChooseUs from "~/components/home/ChooseUs.vue";
 import MainHome from "~/components/home/MainHome.vue";
 import Ready from "~/components/ui/ready/Ready.vue";
 import Servicios from "~/components/home/Servicios.vue";
+import Clients from "~/components/home/Clients.vue";
 
 useSeoMeta({
   title: "AaronJ Solutions - Home",
@@ -18,6 +19,7 @@ useSeoMeta({
 <template>
   <MainHome />
   <Servicios />
+  <Clients />
   <ChooseUs />
   <Ready />
 </template>
