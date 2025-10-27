@@ -16,10 +16,8 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
-    <MainHome />
-    <Servicios />
-    <ChooseUs />
-    <Ready />
-  </div>
+  <MainHome />
+  <Servicios />
+  <ChooseUs />
+  <Ready />
 </template>

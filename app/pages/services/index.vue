@@ -4,8 +4,6 @@ import ServicesServices from "~/components/services/ServicesServices.vue";
 </script>
 
 <template>
-  <div>
-    <MainServices />
-    <ServicesServices />
-  </div>
+  <MainServices />
+  <ServicesServices />
 </template>
