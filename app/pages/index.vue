@@ -11,13 +11,15 @@ useSeoMeta({
     "Bienvenido a AaronJ Solutions, tu socio confiable en desarrollo web y soluciones digitales. Descubre nuestros servicios y cómo podemos ayudarte a crecer en el mundo digital.",
   ogDescription:
     "Bienvenido a AaronJ Solutions, tu socio confiable en desarrollo web y soluciones digitales. Descubre nuestros servicios y cómo podemos ayudarte a crecer en el mundo digital.",
-  ogImage: '/logo.webp'
+  ogImage: "/logo.webp",
 });
 </script>
 
 <template>
-  <MainHome />
-  <Servicios />
-  <ChooseUs />
-  <Ready />
+  <div>
+    <MainHome />
+    <Servicios />
+    <ChooseUs />
+    <Ready />
+  </div>
 </template>

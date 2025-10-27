@@ -1,9 +1,11 @@
+<script setup lang="ts">
+import MainServices from "~/components/services/MainServices.vue";
+import ServicesServices from "~/components/services/ServicesServices.vue";
+</script>
+
 <template>
   <div>
-    <h1>Services Page</h1>
+    <MainServices />
+    <ServicesServices />
   </div>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped></style>
