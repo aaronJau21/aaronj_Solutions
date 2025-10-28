@@ -89,6 +89,16 @@
 
 <script setup lang="ts">
 import FormContact from "~/components/contact/FormContact.vue";
+
+useSeoMeta({
+  title: "Contacta — AaronJ Solutions",
+  ogTitle: "Contacta — AaronJ Solutions",
+  description:
+    "¿Tienes un proyecto? Ponte en contacto con AaronJ Solutions. Diseño y desarrollo web a medida para empresas y emprendimientos.",
+  ogDescription:
+    "¿Tienes un proyecto? Ponte en contacto con AaronJ Solutions. Diseño y desarrollo web a medida para empresas y emprendimientos.",
+  ogImage: "/logo.webp",
+});
 </script>
 
 <style scoped>

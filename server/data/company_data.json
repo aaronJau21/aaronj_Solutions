@@ -1,0 +1,67 @@
+{
+  "companyInfo": {
+    "name": "AaronJ Solutions",
+    "slogan": "Transformando Ideas en Realidad",
+    "description": "Somos un equipo apasionado de desarrolladores y diseñadores comprometidos con crear soluciones digitales que transforman negocios.",
+    "mission": "Empoderar a las empresas mediante soluciones tecnológicas innovadoras que impulsan el crecimiento, mejoran la eficiencia y crean valor duradero."
+  },
+  "contact": {
+    "location": "Lima, Perú",
+    "email": "contacto@aaronjsolutions.com",
+    "phone": "+51 95947609"
+  },
+  "services": [
+    {
+      "title": "Páginas Web",
+      "description": "Sitios web modernos, responsivos y optimizados para SEO que impulsan tu presencia digital."
+    },
+    {
+      "title": "Sistemas Web",
+      "description": "Sistemas web robustos y escalables diseñados para automatizar y optimizar tus procesos de negocio."
+    },
+    {
+      "title": "Aplicaciones Móviles",
+      "description": "Apps nativas y multiplataforma que ofrecen experiencias excepcionales en iOS y Android."
+    },
+    {
+      "title": "Integración de IA",
+      "description": "Incorporamos inteligencia artificial para automatizar tareas y mejorar la toma de decisiones."
+    }
+  ],
+  "values": [
+    {
+      "title": "Innovación",
+      "description": "Utilizamos las últimas tecnologías y metodologías para crear soluciones innovadoras."
+    },
+    {
+      "title": "Colaboración",
+      "description": "Trabajamos estrechamente con nuestros clientes para entender y superar sus expectativas."
+    },
+    {
+      "title": "Calidad",
+      "description": "Nos comprometemos a entregar productos de la más alta calidad en cada proyecto."
+    },
+    {
+      "title": "Crecimiento",
+      "description": "Impulsamos el crecimiento de tu negocio con soluciones escalables y eficientes."
+    }
+  ],
+  "stats": [
+    {
+      "label": "Proyectos Completados",
+      "value": "100+"
+    },
+    {
+      "label": "Clientes Satisfechos",
+      "value": "50+"
+    },
+    {
+      "label": "Años de Experiencia",
+      "value": "10+"
+    },
+    {
+      "label": "Tazas de Café",
+      "value": "999+"
+    }
+  ]
+}
