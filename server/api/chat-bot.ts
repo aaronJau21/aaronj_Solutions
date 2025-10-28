@@ -1,6 +1,10 @@
 import { GoogleGenAI } from "@google/genai";
 import { defineEventHandler, readBody } from "h3";
 
+// 1. 📂 Importa el archivo JSON
+// (Asegúrate de que la ruta './company_data.json' sea correcta para tu estructura de proyecto)
+import companyData from '../data/company_data.json'; 
+
 interface ChatMessage {
   role: string;
   parts: Array<{ text: string }>;
@@ -17,6 +21,11 @@ const ai = new GoogleGenAI({
   apiKey: config.apiKeyGemini,
 });
 
+// 2. 📝 Crea la Instrucción de Sistema
+// Ahora que 'companyData' es un objeto JavaScript importado, lo convertimos a string.
+const systemInstruction = `Eres un asistente de servicio al cliente amable y útil para la empresa AaronJ Solutions. Responde a todas las preguntas basándote ÚNICAMENTE en la siguiente información de la empresa, estructurada en formato JSON. No inventes información:
+${JSON.stringify(companyData, null, 2)}`; // Convierte el JSON a string
+
 export default defineEventHandler(async (event) => {
   try {
     const { message, history = [] } = await readBody<RequestBody>(event);
@@ -25,20 +34,22 @@ export default defineEventHandler(async (event) => {
       return { error: "No message provided" };
     }
 
+    // 3. 💬 Pasa la systemInstruction al crear el chat
     const chat = ai.chats.create({
       model: "gemini-2.5-flash",
-      // Puedes pasar el historial de conversación para mantener el contexto
       history: history,
+      config: {
+        systemInstruction: systemInstruction, // ✨ ¡Usamos la instrucción predefinida!
+      }
     });
 
-    // 2. Envía el mensaje y espera la respuesta
+    // 4. Envía el mensaje y espera la respuesta
     const response = await chat.sendMessage({ message: message });
 
-    // 3. Devuelve la respuesta y el historial actualizado
-    // Es común devolver la respuesta completa y el historial para que el frontend lo maneje
+    // 5. Devuelve la respuesta y el historial actualizado
     return {
       text: response.text,
-      newHistory: await chat.getHistory(), // Obtiene el historial actualizado
+      newHistory: await chat.getHistory(),
     };
   } catch (error) {
     console.error(error);

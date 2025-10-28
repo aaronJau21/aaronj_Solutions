@@ -3,47 +3,64 @@
     "name": "AaronJ Solutions",
     "slogan": "Transformando Ideas en Realidad",
     "description": "Somos un equipo apasionado de desarrolladores y diseñadores comprometidos con crear soluciones digitales que transforman negocios.",
-    "mission": "Empoderar a las empresas mediante soluciones tecnológicas innovadoras que impulsan el crecimiento, mejoran la eficiencia y crean valor duradero."
+    "mission": "Empoderar a las empresas mediante soluciones tecnológicas innovadoras que impulsan el crecimiento, mejoran la eficiencia y crean valor duradero.",
+    "vision": "Ser referentes en innovación tecnológica a nivel Latinoamérica, ayudando a las empresas a alcanzar su máximo potencial digital.",
+    "foundedYear": 2018
   },
   "contact": {
     "location": "Lima, Perú",
     "email": "contacto@aaronjsolutions.com",
-    "phone": "+51 95947609"
+    "phone": "+51 95947609",
+    "website": "https://aaronjsolutions.com",
+    "socials": {
+      "facebook": "https://facebook.com/aaronjsolutions",
+      "instagram": "https://instagram.com/aaronjsolutions",
+      "linkedin": "https://linkedin.com/company/aaronjsolutions",
+      "github": "https://github.com/aaronjauregui"
+    }
   },
   "services": [
     {
       "title": "Páginas Web",
-      "description": "Sitios web modernos, responsivos y optimizados para SEO que impulsan tu presencia digital."
+      "description": "Sitios web modernos, responsivos y optimizados para SEO que impulsan tu presencia digital.",
+      "icon": "globe"
     },
     {
       "title": "Sistemas Web",
-      "description": "Sistemas web robustos y escalables diseñados para automatizar y optimizar tus procesos de negocio."
+      "description": "Sistemas web robustos y escalables diseñados para automatizar y optimizar tus procesos de negocio.",
+      "icon": "settings"
     },
     {
       "title": "Aplicaciones Móviles",
-      "description": "Apps nativas y multiplataforma que ofrecen experiencias excepcionales en iOS y Android."
+      "description": "Apps nativas y multiplataforma que ofrecen experiencias excepcionales en iOS y Android.",
+      "icon": "smartphone"
     },
     {
       "title": "Integración de IA",
-      "description": "Incorporamos inteligencia artificial para automatizar tareas y mejorar la toma de decisiones."
+      "description": "Incorporamos inteligencia artificial para automatizar tareas y mejorar la toma de decisiones.",
+      "icon": "brain"
     }
   ],
   "values": [
     {
       "title": "Innovación",
-      "description": "Utilizamos las últimas tecnologías y metodologías para crear soluciones innovadoras."
+      "description": "Utilizamos las últimas tecnologías y metodologías para crear soluciones innovadoras.",
+      "icon": "sparkles"
     },
     {
       "title": "Colaboración",
-      "description": "Trabajamos estrechamente con nuestros clientes para entender y superar sus expectativas."
+      "description": "Trabajamos estrechamente con nuestros clientes para entender y superar sus expectativas.",
+      "icon": "users"
     },
     {
       "title": "Calidad",
-      "description": "Nos comprometemos a entregar productos de la más alta calidad en cada proyecto."
+      "description": "Nos comprometemos a entregar productos de la más alta calidad en cada proyecto.",
+      "icon": "check-circle"
     },
     {
       "title": "Crecimiento",
-      "description": "Impulsamos el crecimiento de tu negocio con soluciones escalables y eficientes."
+      "description": "Impulsamos el crecimiento de tu negocio con soluciones escalables y eficientes.",
+      "icon": "trending-up"
     }
   ],
   "stats": [
@@ -63,5 +80,25 @@
       "label": "Tazas de Café",
       "value": "999+"
     }
-  ]
+  ],
+  "metadata": {
+    "title": "AaronJ Solutions | Desarrollo Web, Sistemas y Aplicaciones",
+    "description": "Creamos soluciones digitales personalizadas: páginas web, sistemas empresariales, apps móviles e integración de inteligencia artificial. Impulsa tu negocio con innovación tecnológica.",
+    "keywords": [
+      "desarrollo web",
+      "nuxt",
+      "vue",
+      "tailwind css",
+      "sistemas empresariales",
+      "inteligencia artificial",
+      "aplicaciones móviles",
+      "Lima Perú",
+      "AaronJ Solutions"
+    ],
+    "author": "Aaron Jauregui"
+  },
+  "horarios": {
+    "description": "Todos los días las 24 horas del día",
+    "attention": "Soporte técnico disponible 24/7 vía correo o WhatsApp"
+  }
 }
