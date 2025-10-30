@@ -64,3 +64,23 @@ h2 {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #3a8dbb;
 }
+
+
+.bg-ice {
+  @apply bg-[#E6EEF5];
+}
+.bg-navy {
+  @apply bg-[#13294B];
+}
+.text-navy {
+  @apply text-[#13294B];
+}
+.text-slate {
+  @apply text-gray-600;
+}
+.bg-blue600 {
+  @apply bg-[#2563eb];
+}
+.bg-sky {
+  @apply bg-sky-500;
+}

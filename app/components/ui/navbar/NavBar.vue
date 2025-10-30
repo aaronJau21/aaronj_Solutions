@@ -17,6 +17,7 @@ const navLinks: INavLink[] = [
   { text: "Nosotros", to: "/about" },
   { text: "Servicios", to: "/services" },
   { text: "Contactanos", to: "/contact" },
+  { text: "Blogs", to: "/blog" },
 ];
 </script>
 
