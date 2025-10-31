@@ -1,0 +1,37 @@
+{
+  "name": "aaronj-solutions",
+  "env": [
+    {
+      "key": "API_KEY_GEMINI",
+      "value": "",
+      "description": "API Key de Google Gemini para el chatbot"
+    },
+    {
+      "key": "URL_API",
+      "value": "",
+      "description": "URL de la API (opcional)"
+    },
+    {
+      "key": "NODE_ENV",
+      "value": "production"
+    },
+    {
+      "key": "HOST",
+      "value": "0.0.0.0"
+    },
+    {
+      "key": "PORT",
+      "value": "3000"
+    }
+  ],
+  "ports": [
+    {
+      "published": 3000,
+      "target": 3000,
+      "protocol": "tcp"
+    }
+  ],
+  "mounts": [],
+  "buildArgs": {},
+  "dockerfile": "Dockerfile"
+}

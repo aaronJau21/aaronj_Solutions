@@ -1,25 +1,36 @@
 # === Etapa 1: Construcción del proyecto ===
-FROM oven/bun:1 AS builder
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-COPY bun.lock package.json ./
+# Copiar archivos de dependencias
+COPY package*.json ./
 
-# Instalar dependencias completas
-RUN bun install --no-cache
+# Instalar dependencias
+RUN npm ci
 
+# Copiar el resto del proyecto
 COPY . .
 
-RUN bun run build
+# Construir la aplicación
+RUN npm run build
+
 
 # === Etapa 2: Imagen final de producción ===
-FROM oven/bun:1 AS runner
+FROM node:20-alpine AS runner
 
 WORKDIR /app
 
+# Copiar el build y package.json
 COPY --from=builder /app/.output ./.output
 COPY --from=builder /app/package.json ./package.json
 
+# Variables de entorno
+ENV NODE_ENV=production
+ENV HOST=0.0.0.0
+ENV PORT=3000
+
 EXPOSE 3000
 
-CMD ["bun", "run", ".output/server/index.mjs"]
+# Ejecutar la aplicación
+CMD ["node", ".output/server/index.mjs"]

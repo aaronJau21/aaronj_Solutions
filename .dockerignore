@@ -1,7 +1,47 @@
+# Dependencies
 node_modules
-.nuxt
+npm-debug.log
+yarn-error.log
+bun.lockb
+pnpm-lock.yaml
+
+# Build outputs
 .output
-.git
-.env
-*.log
+.nuxt
+dist
+
+
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# CI/CD
+.github
+
+# Documentation
+README.md
+*.md
+
+# Logs
+*.log
+logs
+
+# Tests
+coverage
+*.test.js
+*.test.ts
+
+# Temporary files
+.cache
