@@ -5,13 +5,12 @@ WORKDIR /app
 
 COPY bun.lock package.json ./
 
-# Instalar dependencias sin caché para evitar omisiones de peer deps
+# Instalar dependencias completas
 RUN bun install --no-cache
 
 COPY . .
 
 RUN bun run build
-
 
 # === Etapa 2: Imagen final de producción ===
 FROM oven/bun:1 AS runner
