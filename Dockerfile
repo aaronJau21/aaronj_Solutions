@@ -1,13 +1,14 @@
 # === Etapa 1: Construcción del proyecto ===
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 
 WORKDIR /app
 
 # Copiar archivos de dependencias
 COPY package*.json ./
 
+
 # Instalar dependencias
-RUN npm ci
+RUN npm install --frozen-lockfile --production=false
 
 # Copiar el resto del proyecto
 COPY . .
@@ -17,7 +18,7 @@ RUN npm run build
 
 
 # === Etapa 2: Imagen final de producción ===
-FROM node:20-alpine AS runner
+FROM node:22-alpine AS runner
 
 WORKDIR /app
 
