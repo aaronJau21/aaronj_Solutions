@@ -16,7 +16,8 @@
       "facebook": "https://facebook.com/aaronjsolutions",
       "instagram": "https://instagram.com/aaronjsolutions",
       "linkedin": "https://linkedin.com/company/aaronjsolutions"
-    }
+    },
+    "bookingLink": "https://calendly.com/aaronjsolutions/asesoria-15min"
   },
   "services": [
     {
@@ -63,22 +64,10 @@
     }
   ],
   "stats": [
-    {
-      "label": "Proyectos Completados",
-      "value": "100+"
-    },
-    {
-      "label": "Clientes Satisfechos",
-      "value": "50+"
-    },
-    {
-      "label": "Años de Experiencia",
-      "value": "10+"
-    },
-    {
-      "label": "Tazas de Café",
-      "value": "999+"
-    }
+    { "label": "Proyectos Completados", "value": "100+" },
+    { "label": "Clientes Satisfechos", "value": "50+" },
+    { "label": "Años de Experiencia", "value": "10+" },
+    { "label": "Tazas de Café", "value": "999+" }
   ],
   "metadata": {
     "title": "AaronJ Solutions | Desarrollo Web, Sistemas y Aplicaciones",
@@ -99,5 +88,115 @@
   "horarios": {
     "description": "Todos los días las 24 horas del día",
     "attention": "Soporte técnico disponible 24/7 vía correo o WhatsApp"
+  },
+
+  "pricing": {
+    "currency": "PEN",
+    "webPackages": [
+      {
+        "id": "landing_pro",
+        "name": "Landing Pro",
+        "sections": "1–2 secciones",
+        "range": { "min": 1400, "max": 1900 },
+        "includes": [
+          "Diseño responsive",
+          "Implementación en CMS o estática",
+          "Optimización SEO técnico básico",
+          "Integración a WhatsApp / formulario"
+        ],
+        "deliveryDays": "5–7 días hábiles"
+      },
+      {
+        "id": "corporativa",
+        "name": "Web Corporativa",
+        "sections": "4–6 secciones",
+        "range": { "min": 2400, "max": 3500 },
+        "includes": [
+          "Diseño UI adaptado a marca",
+          "Páginas: Inicio, Nosotros, Servicios, Contacto, etc.",
+          "SEO técnico inicial y analítica",
+          "Capacitación breve para autogestión"
+        ],
+        "deliveryDays": "10–15 días hábiles"
+      },
+      {
+        "id": "ecommerce",
+        "name": "Tienda Online",
+        "sections": "Catálogo + pagos",
+        "range": { "min": 3800, "max": 6500 },
+        "includes": [
+          "Gestión de productos y pedidos",
+          "Pasarela de pago",
+          "Envíos básicos",
+          "SEO técnico inicial"
+        ],
+        "deliveryDays": "15–25 días hábiles"
+      },
+      {
+        "id": "custom_ia",
+        "name": "A medida con IA",
+        "sections": "Personalizado",
+        "range": { "min": 6500, "max": null },
+        "includes": [
+          "Chatbot IA",
+          "Formularios inteligentes y lead scoring",
+          "Automatizaciones y reportes",
+          "Integraciones a WhatsApp/CRM"
+        ],
+        "deliveryDays": "Según alcance"
+      }
+    ],
+    "addons": [
+      { "id": "hosting_anual", "name": "Hosting anual", "priceApprox": 420, "notes": "≈ US$110/año" },
+      { "id": "dominio_com", "name": "Dominio .com", "priceApprox": 65, "notes": "S/ 60–70 / año" },
+      { "id": "soporte_mensual", "name": "Soporte y actualizaciones", "priceRange": { "min": 120, "max": 250 }, "notes": "Opcional" },
+      { "id": "entrega_expres", "name": "Entrega exprés", "surchargePercent": 20, "notes": "+% sobre el total por urgencia" }
+    ],
+    "waas": {
+      "name": "Website-as-a-Service",
+      "monthly": 199,
+      "includes": [
+        "Plantilla premium personalizada",
+        "Hosting y soporte básico",
+        "2 cambios menores/mes"
+      ],
+      "notes": "Contrato mínimo 6 meses. Ideal para presupuestos ajustados."
+    }
+  },
+
+  "chatbot": {
+    "qualifyingQuestions": [
+      {
+        "id": "type",
+        "text": "¿Qué tipo de web necesitas? (Landing / Corporativa / Tienda online / A medida con IA)",
+        "options": ["Landing", "Corporativa", "Tienda online", "A medida con IA"]
+      },
+      {
+        "id": "content",
+        "text": "¿Tienes el contenido y fotos listos?",
+        "options": ["Sí", "No"]
+      },
+      {
+        "id": "integrations",
+        "text": "¿Requieres integraciones? (WhatsApp, pagos, chatbot IA, formularios inteligentes, CRM)"
+      }
+    ],
+    "templates": {
+      "baseRange": "Con la información disponible, estos son nuestros rangos habituales: \\n• Landing Pro (1–2 secciones): S/ 1,400–1,900 \\n• Web Corporativa (4–6 secciones): S/ 2,400–3,500 \\n• Tienda Online: S/ 3,800–6,500 \\n• A medida con IA: desde S/ 6,500 \\n\\n*No incluye hosting (≈ S/ 420/año) ni dominio (.com ≈ S/ 60–70).*",
+      "personalizedRange": "Perfecto. Con **{{type}}** {{extras}} y {{content}}, tu rango estimado es **S/ {{min}} – {{max}}**. Incluye diseño responsive, SEO técnico inicial y capacitación breve para autogestión.",
+      "cta": "¿Te reservo una **asesoría de 15 min** para revisar tu caso y opciones de ahorro? Agenda aquí: {{bookingLink}} \\nO seguimos por WhatsApp 👉 {{whatsApp}}",
+      "fallback": "Puedo darte un estimado ahora mismo. Si me confirmas tipo de web, contenido y si necesitas pagos/WhatsApp/chatbot IA, te doy un rango más preciso."
+    },
+    "whatsApp": "+51 942631794",
+    "leadScoring": {
+      "highIntentKeywords": ["tienda", "pagos", "chatbot", "integraciones", "presupuesto listo"],
+      "scoreRules": [
+        { "signal": "type=tienda online", "score": 30 },
+        { "signal": "integrations incluye pagos o chatbot", "score": 25 },
+        { "signal": "content=si", "score": 15 },
+        { "signal": "menciona fecha/urgente", "score": 20 }
+      ],
+      "thresholds": { "hot": 60, "warm": 35, "cold": 0 }
+    }
   }
 }
